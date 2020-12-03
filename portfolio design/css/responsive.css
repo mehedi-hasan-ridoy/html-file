@@ -1,0 +1,56 @@
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+       
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media  (max-width: 991px) {
+    .top-left.col-lg-4 {
+        width: 30%;
+    }
+    .top-right.col-lg-8.d-flex.justify-content-end {
+      
+        width: 66%;
+    }
+
+    a.meanmenu-reveal {
+        margin-top: 20px;
+        color: black!important;
+        font-size: 32px!important;
+    }
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+/* .container {width:300px} */
+ 
+}
+ 
+/* Large Mobile :380px. */
+@media only screen  and (max-width:340px) {
+/* .container {width:450px} */
+
+.icon {
+  
+    width:200px;
+  
+}
+
+.list-ttile li a{
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 29px;
+    color:#ff5200;
+    padding:5px;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+}
+ 
+}
+ 

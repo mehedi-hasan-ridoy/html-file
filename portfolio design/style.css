@@ -1,0 +1,914 @@
+/*
+  Theme Name: Name :
+  Author: 
+  Support: 
+  Description: 
+  Version: 1.0
+*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Caveat:wght@400;500;600;700&family=Handlee&family=Pacifico&display=swap');
+/*sryle.css  */
+
+
+html,
+body {
+    height: 100%;
+}
+
+.floatleft {
+    float: left
+}
+
+.floatright {
+    float: right
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px
+}
+
+a:focus {
+    outline: 0px solid
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.fix {
+    overflow: hidden
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 10px;
+}
+
+a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ec4445;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0 none;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0
+}
+
+.clear {
+    clear: both
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* start custom coding */
+.main-menu {
+    background: url("img/image.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover
+}
+
+.row.sticky {
+    background: #f1f1f170;
+    position: sticky;
+    border-radius: 4px;
+}
+.main-menu .logo img {
+    padding: 29px 0px;
+
+}
+
+.main-menu .navbar .nav {
+    border-bottom: 1px solid red;
+    position: relative;
+    border-right: 1px solid red;
+    border-left: 1px solid red;
+}
+
+.main-menu .navbar .nav-item {
+    text-transform: uppercase;
+    padding: 10px 0px;
+}
+
+.main-menu .navbar .nav-item .nav-link {
+    color: #fed1d1;
+    font-weight: 500;
+    font-family: 'Handlee', cursive;
+
+}
+
+.main-menu .navbar .nav-item:hover a {
+    color: rgb(189, 255, 6);
+}
+
+/* start nav all ::after */
+
+
+.main-menu .navbar .ab::after {
+    position: absolute;
+    width: 0px;
+    left: 4%;
+    top: 48px;
+    opacity: 1;
+    content: "";
+    height: 2px;
+    display: inline-block;
+    vertical-align: center;
+    background: red;
+}
+
+
+.main-menu .navbar .bc::after {
+    position: absolute;
+    width: 0px;
+    left: 20%;
+    top: 48px;
+    opacity: 1;
+    content: "";
+    height: 2px;
+    display: inline-block;
+    vertical-align: center;
+    background: red;
+}
+
+.main-menu .navbar .cd::after {
+    position: absolute;
+    width: 0px;
+    left: 39%;
+    top: 48px;
+    opacity: 1;
+    content: "";
+    height: 2px;
+    display: inline-block;
+    vertical-align: center;
+    background: red;
+}
+
+.main-menu .navbar .de::after {
+    position: absolute;
+    width: 0px;
+    left: 64%;
+    top: 48px;
+    opacity: 1;
+    content: "";
+    height: 2px;
+    display: inline-block;
+    vertical-align: center;
+    background: red;
+}
+
+.main-menu .navbar .ef::after {
+    position: absolute;
+    width: 0px;
+    left: 81%;
+    top: 48px;
+    opacity: 1;
+    content: "";
+    height: 2px;
+    display: inline-block;
+    vertical-align: center;
+    background: red;
+}
+
+.main-menu .navbar .ab:hover::after {
+
+    width: 44px;
+    transition: 0.3s;
+}
+
+.main-menu .navbar .bc:hover::after {
+
+    width: 51px;
+    transition: 0.3s;
+}
+
+.main-menu .navbar .cd:hover::after {
+
+    width: 73px;
+    transition: 0.3s;
+}
+
+.main-menu .navbar .de:hover::after {
+
+    width: 43px;
+    transition: 0.3s;
+}
+
+.main-menu .navbar .ef:hover::after {
+
+    width: 70px;
+    transition: 0.3s;
+}
+
+/* dropdown-menu */
+
+
+/* menu custom css start */
+.dropdown-menu {
+    left: 32%;
+    transition: 0.5s;
+}
+ul.sub-section.dropdown-menu.show {
+    padding-left: 15px;
+    background: #000000!important;
+    box-shadow: -1px 0px 9px 2px #b7a4a4;
+}
+ul.sub-section.dropdown-menu.show {
+    padding-left: 15px;
+}
+
+ul.sub-section.dropdown-menu.show li a {
+    color: #ff5200;
+}
+
+ul.sub-section.dropdown-menu.show .svg-inline--fa.fa-w-14 {
+    width: 1.875em;
+}
+/* menu custom css end */
+
+
+/* mean menu all class start*/
+
+.mean-container .mean-bar {
+    float: left;
+    width: 81%;
+    position: relative;
+    background: rgb(175 175 175);
+    padding: 30px 0px;
+    min-height: 22px;
+    z-index: 999999;
+    margin: 0;
+}
+
+.mean-container a.meanmenu-reveal{  color: #d71d1d!important;}
+.mean-nav ul li li a{  background: #31263c;}
+
+.mean-container .mean-nav ul li a:hover {
+    background: #adadad;
+    background: rgb(124 121 121 / 52%)!important;
+    color:#ff5200;
+}
+
+.mean-container .mean-nav ul li a:hover {
+    background: #252525;
+    background: rgb(34 25 25 / 52%);
+}
+
+.mean-container .mean-nav ul li a.mean-expand { background: rgb(255 255 255 / 48%);}
+/* mean menu all class end */
+
+
+
+/* start-header-bottom */
+.container.padd {
+    padding-top: 20px;
+}
+.all-title.col-lg-12.text-center {
+    padding-bottom: 102px;
+}
+.random {
+  
+    font-size: 45px;
+    font-family: 'Handlee', cursive;
+    text-transform: capitalize;
+    margin-top:90px;
+    margin-bottom: 40px;
+    color: #2b2617;
+    text-transform: uppercase;
+    background: url("img/logo (2).png");
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.header-item .single-title h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    text-shadow: -5px 5px 20px #000;
+    text-shadow: -10px 10px 30px #000;
+    text-shadow: -20px 15px 40px #000;
+    text-shadow: -25px 20px 50px #000
+}
+
+.header-item .single-title h2 {
+    color: #ff2400;
+    text-transform: uppercase !important;
+    margin-bottom: 25px !important;
+    font-family: 'Handlee', cursive;
+
+
+}
+
+.para {
+    color: white !important;
+    text-transform: capitalize;
+    font-family: 'caveat', cursive;
+    font-size: 25px;
+}
+
+
+
+
+/* button animation 1 */
+.ani {
+    border-radius: 3px;
+    color: #ffffff;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    transition: .5s;
+    overflow: hidden;
+    font-family: 'Handlee', cursive;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
+
+}
+
+.ani:hover {
+    background: #03e9f4;
+    color: #058801 !important;
+    box-shadow: 0px 0px 4px #ffbbbb,
+        0px 0px 25px #03e9f4,
+        0px 0px 50px #03e9f4,
+        0px 0px 200px #03e9f4;
+
+}
+
+.ani span {
+
+    position: absolute;
+    display: block;
+
+}
+
+.ani span:nth-child(1) {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate 1s linear infinite;
+    filter: hue-rotate(290deg);
+
+}
+
+@keyframes animate {
+
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+
+}
+
+.ani span:nth-child(2) {
+
+    top: -100;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+    animation-delay: 0.25s;
+    filter: hue-rotate(110deg);
+
+
+}
+
+@keyframes animate1 {
+
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+
+}
+
+.ani span:nth-child(3) {
+
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(-270deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.50s;
+
+
+}
+
+@keyframes animate2 {
+
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+
+}
+
+.ani span:nth-child(4) {
+
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.75s;
+
+
+}
+
+
+@keyframes animate3 {
+
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+
+}
+
+/* end all key-frame */
+
+/* start-about-section */
+
+
+section#about-section-link {
+    background: #737070;
+  
+    padding-bottom: 20px;
+    padding-top: 51px;
+}
+.aboutme .title h2 {
+    text-transform: uppercase;
+    margin-top: 17px;
+    margin-bottom: 0;
+    font-size: 38px;
+    font-weight: 900;
+    font-family: 'Handlee', cursive;
+    position: relative;
+    background:url("img/logo (2).png");
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-white {
+    background-color: rgb(202 186 186) !important;
+    box-shadow: 0px 0px 6px 1px white, inset 0px 0px 2px 2px rgb(127 120 134);
+}
+
+
+
+
+.title.col-lg-12.text-center p {
+    color: #5b7d7e;
+    text-transform: capitalize;
+    margin-bottom: 77px;
+}
+
+
+
+
+.image1 {
+    margin: auto;
+    width: 28px;
+}
+
+.title {
+    width: 236px;
+    margin: auto;
+}
+
+.title h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 57%;
+    top: 133%;
+}
+
+.title h2::before {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 14%;
+    top: 132%;
+}
+
+/* first row end */
+
+
+.frame {
+    background: url(img/frame.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0px 1px 3px 0px #281f1f7d, inset 0px 1px 3px 3px #9abfdf;
+}
+
+.single-img {
+    text-align: center;
+    margin-top: 50px;
+    overflow: hidden;
+    background: radial-gradient(black, transparent);
+}
+
+.single-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+/* image div end */
+
+
+.text-uppercase {
+    text-transform: uppercase !important;
+    color: #e400ff;
+}
+
+.name {
+    width: 100%;
+    margin-left: 40px;
+}
+
+/* learn more */
+div#typewriter {
+    color: #8e2929;
+    font-family: 'Handlee', cursive;
+}
+
+.single-title.col-lg-8 h2 {
+    color: red;
+    text-transform: uppercase;
+    margin-top: 44px;
+    font-family: 'Handlee', cursive;
+    position: relative;
+    width: 80% !important;
+}
+
+
+.single-title p {
+    font-family: 'Handlee', cursive;
+}
+
+
+/* icon div */
+
+
+.icon {
+    overflow: hidden;
+    width: 264px;
+    border-bottom: 1px dotted red;
+    margin-left: 40px;
+}
+
+
+.list-ttile li a {
+    display: block;
+    float: left;
+    margin-right: 31px;
+    margin-top: 29px;
+    color: #ff5200;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.doc:hover a {
+    color: rgb(236, 236, 236);
+    background: rgb(252, 129, 129) !important;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+/* botton + button animation*/
+
+.btn {
+    margin-left: 14px;
+    margin-top: 16px;
+    overflow: hidden;
+
+}
+
+.col {
+    color: #44f6ff !important;
+    text-transform: uppercase;
+}
+
+
+.col span {
+
+    position: absolute;
+    display: block;
+    overflow: hidden;
+
+}
+
+.col span {
+
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 2px;
+    background: linear-gradient(120deg, transparent, #ff9a27);
+    animation: animat 1s linear infinite;
+    animation-delay: 0.75s;
+
+
+}
+
+@keyframes animat {
+
+    0% {
+        bottom: 0%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+
+}
+
+
+
+
+
+/*proggress bar start  */
+
+section.progress-bar {
+ 
+    padding-top: 88px;
+    padding-bottom: 60px;
+    background: #61615b;
+}
+
+.skill {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 64px;
+    position: relative;
+}
+
+.skill h1 {
+    text-transform: uppercase;
+    color: aqua;
+    text-shadow: 0px 1px 3px #fff2f2;
+    
+}
+
+.skill h1::after {
+    content: "";
+    background: linear-gradient(90deg,#000080,blue,green,#800080);
+    position: absolute;
+    left: 67px;
+    top: 55px;
+    width: 168px;
+    height: 3px;
+    box-shadow: 2px 18px 10px 2px #8f7e81;
+}
+
+section.progress-bar .row p {
+    text-transform: uppercase;
+    color: #c5d7c5;
+}
+
+span.fill {
+    height: 8px !important;
+    margin-top: 1px;
+    border-radius: 2px;
+    margin-left: 1px;
+}
+
+.barfiller {
+    width: 100%;
+    height: 12px;
+    background: #999999;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: inset 1px 1px 3px 2px rgb(245 224 224 / 50%);
+    border-radius: 3px;
+}
+
+.barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+}
+
+.barfiller .tipWrap {
+    display: none;
+}
+
+.barfiller .tip {
+    margin-top: -30px;
+    padding: 2px 4px;
+    font-size: 11px;
+    color: #e6e6e6;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+    background: #4c2d2d;
+    border-radius: 6px;
+}
+
+.tip:after {
+    border: solid;
+    border-color: rgb(236 181 181 / 80%) transparent;
+    border-width: 6px 6px 0 6px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 9px;
+    top: 100%;
+    z-index: 9;
+}
+
+
+
+/* progress bar end  */
+
+
+.back {
+    background-color: #808000
+}
+
+.services-title.text-center h2 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 41px;
+    padding-top: 63px;
+
+}
+
+.services-title.text-center p {
+    color: wheat;
+    text-transform: capitalize;
+    margin-top: 21px;
+    font-family: 'caveat', cursive;
+}
+
+.wraper-box.col-lg-4 {
+    margin-top: 68px;
+}
+
+.single-services-box {
+    width: 90%;
+    text-align: center;
+    background: white;
+    position: relative;
+    padding-top: 45px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px 4px #899ac8, 0px 0px 4px 4px #b2b2b2;
+}
+
+.single-services-box h2 {
+    text-transform: capitalize;
+    font-family: 'Handlee', cursive;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.single-services-box p {
+    font-family: 'Handlee', cursive;
+    padding: 17px;
+    padding-bottom: 46px;
+    /* margin-bottom: 6px; */
+}
+
+svg.svg-inline--fa.fa-laptop {
+    font-size: 50px;
+    color: #ffffff;
+    position: absolute;
+    left: 41%;
+    top: -12%;
+    background: red;
+    padding: 15px;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 2px 3px white;
+}
+
+svg.svg-inline--fa.fa-code {
+    width: 1.25em;
+    font-size: 50px;
+    color: #ffffff;
+    position: absolute;
+    left: 41%;
+    top: -12%;
+    background: red;
+    padding: 15px;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 2px 3px white;
+}
+
+svg.svg-inline--fa.fa-wordpress {
+    font-size: 50px;
+    color: #ffffff;
+    position: absolute;
+    left: 41%;
+    top: -12%;
+    background: red;
+    padding: 15px;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 2px 3px white;
+}
